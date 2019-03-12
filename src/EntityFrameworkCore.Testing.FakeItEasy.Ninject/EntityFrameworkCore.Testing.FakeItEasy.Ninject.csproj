@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>EntityFrameworkCoreTesting.FakeItEasy.Ninject</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>EntityFramework Entity Framework EF EF6 Testing Ninject Mocking FakeItEasy</PackageTags>
+    <PackageLicenseUrl>https://github.com/scott-xu/EntityFramework.Testing/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/scott-xu/EntityFramework.Testing</PackageProjectUrl>
+    <Product>EntityFramework Testing FakeItEasy Ninject</Product>
+    <Description>Testing helpers for using Ninject.MockingKernel.FakeItEasy with EntityFramework.</Description>
+    <Copyright>Copyright 2015-2017 Scott Xu</Copyright>
+    <Authors>Scott Xu</Authors>
+    <RootNamespace>EntityFrameworkCore.Testing.FakeItEasy.Ninject</RootNamespace>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject.MockingKernel.FakeItEasy" Version="3.3.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta004">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EntityFrameworkCore.Testing.FakeItEasy\EntityFrameworkCore.Testing.FakeItEasy.csproj" />
+    <ProjectReference Include="..\EntityFrameworkCore.Testing.Ninject\EntityFrameworkCore.Testing.Ninject.csproj" />
+    <ProjectReference Include="..\EntityFrameworkCore.Testing\EntityFrameworkCore.Testing.csproj" />
+  </ItemGroup>
+
+</Project>

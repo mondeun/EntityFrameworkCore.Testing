@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>EntityFrameworkCoreTesting.Moq</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>EntityFramework Entity Framework EF EF6 Testing Moq</PackageTags>
+    <PackageLicenseUrl>https://github.com/scott-xu/EntityFramework.Testing/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/scott-xu/EntityFramework.Testing</PackageProjectUrl>
+    <Product>EntityFramework Testing Moq</Product>
+    <Company>Microsoft Open Technologies, Inc</Company>
+    <Description>Testing helpers for using Moq with EntityFramework.</Description>
+    <Copyright>Copyright 2014-2017 Microsoft Open Technologies, Inc</Copyright>
+    <Authors>Rowan Miller, Scott Xu</Authors>
+    <RootNamespace>EntityFrameworkCore.Testing.Moq</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.2.1409.1722" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta004">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EntityFrameworkCore.Testing\EntityFrameworkCore.Testing.csproj" />
+  </ItemGroup>
+
+</Project>

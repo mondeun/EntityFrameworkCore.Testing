@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net46</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>EntityFrameworkCoreTesting.NSubstitute</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>EntityFramework Entity Framework EF EF6 Testing NSubstitute</PackageTags>
+    <PackageLicenseUrl>https://github.com/scott-xu/EntityFramework.Testing/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/scott-xu/EntityFramework.Testing</PackageProjectUrl>
+    <Product>EntityFramework Testing NSubstitute</Product>
+    <Description>Testing helpers for using NSubstitute with EntityFramework.</Description>
+    <Copyright>Copyright 2014-2017 Justin Yoo</Copyright>
+    <Authors>Justin Yoo</Authors>
+    <RootNamespace>EntityFrameworkCore.Testing.NSubstitute</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NSubstitute" Version="2.0.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta004">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EntityFrameworkCore.Testing\EntityFrameworkCore.Testing.csproj" />
+  </ItemGroup>
+
+</Project>
