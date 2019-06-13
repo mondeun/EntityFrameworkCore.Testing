@@ -1,6 +1,6 @@
-## EntityFramework.Testing [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting/) [![Build status](https://ci.appveyor.com/api/projects/status/8dam29eko6pyot3v?svg=true)](https://ci.appveyor.com/project/scott-xu/entityframework-testing)
+## EntityFrameworkCore.Testing [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting/) [![Build status](https://ci.appveyor.com/api/projects/status/8dam29eko6pyot3v?svg=true)](https://ci.appveyor.com/project/scott-xu/entityframework-testing)
 
-**EntityFramework.Testing** provides an implementation of `DbAsyncQueryProvider` that can be used when testing a component that uses async queries with EntityFramework.
+**EntityFrameworkCore.Testing** provides an implementation of `DbAsyncQueryProvider` that can be used when testing a component that uses async queries with EntityFramework.
 
 The project is cut from EntityFrameworks' [source code](http://entityframework.codeplex.com/SourceControl/latest#test/EntityFramework/FunctionalTests/TestDoubles/). Some changes are made to be compliant with StyleCop/CodeAnalysis
 
@@ -37,11 +37,11 @@ public class BlogsController : Controller
 }
 ```
 
-### EntityFramework.Testing.Moq [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.Moq.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.Moq/) 
+### EntityFrameworkCore.Testing.Moq [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.Moq.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.Moq/) 
 
-**EntityFramework.Testing.Moq** provides a helpful extension method to mock EntityFramework's DbSets using Moq. 
+**EntityFrameworkCore.Testing.Moq** provides a helpful extension method to mock EntityFramework's DbSets using Moq. 
 
-You can write a unit test against a mock context as follows. `SetupData` extension method is part of EntityFramework.Testing.Moq.
+You can write a unit test against a mock context as follows. `SetupData` extension method is part of EntityFrameworkCore.Testing.Moq.
 
 ```C#
 [TestMethod]
@@ -75,9 +75,9 @@ public async Task Index_returns_blogs_ordered_by_name()
 }
 ```
 
-### EntityFramework.Testing.Moq.Ninject [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.Moq.Ninject.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.Moq.Ninject/) 
+### EntityFrameworkCore.Testing.Moq.Ninject [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.Moq.Ninject.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.Moq.Ninject/) 
 
-**EntityFramework.Testing.Moq.Ninject** provides a Ninject Module to auto mock `DbContext` and its `DbSet<>` properties using Ninject.MockingKernel.Moq.
+**EntityFrameworkCore.Testing.Moq.Ninject** provides a Ninject Module to auto mock `DbContext` and its `DbSet<>` properties using Ninject.MockingKernel.Moq.
 
 ```C#
 [TestMethod]
@@ -113,11 +113,11 @@ public async Task Index_returns_blogs_ordered_by_name()
 }
 ``` 
 
-### EntityFramework.Testing.NSubstitute [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.NSubstitute.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.NSubstitute/) 
+### EntityFrameworkCore.Testing.NSubstitute [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.NSubstitute.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.NSubstitute/) 
 
-**EntityFramework.Testing.NSubstitute** provides a helpful extension method to mock EntityFramework's DbSets using [NSubstitute](http://nsubstitute.github.io/). 
+**EntityFrameworkCore.Testing.NSubstitute** provides a helpful extension method to mock EntityFramework's DbSets using [NSubstitute](http://nsubstitute.github.io/). 
 
-You can write a unit test against a mock context as follows. `SetupData` extension method is part of EntityFramework.Testing.NSubstitute.
+You can write a unit test against a mock context as follows. `SetupData` extension method is part of EntityFrameworkCore.Testing.NSubstitute.
 
 ```C#
 [TestMethod]
@@ -151,9 +151,9 @@ public async Task Index_returns_blogs_ordered_by_name()
 }
 ```
 
-### EntityFramework.Testing.NSubstitute.Ninject [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.NSubstitute.Ninject.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.NSubstitute.Ninject/) 
+### EntityFrameworkCore.Testing.NSubstitute.Ninject [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.NSubstitute.Ninject.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.NSubstitute.Ninject/) 
 
-**EntityFramework.Testing.NSubstitute.Ninject** provides a Ninject Module to auto mock `DbContext` and its `DbSet<>` properties using Ninject.MockingKernel.NSubstitute.
+**EntityFrameworkCore.Testing.NSubstitute.Ninject** provides a Ninject Module to auto mock `DbContext` and its `DbSet<>` properties using Ninject.MockingKernel.NSubstitute.
 
 ```C#
 [TestMethod]
@@ -189,11 +189,11 @@ public async Task Index_returns_blogs_ordered_by_name()
 }
 ``` 
 
-### EntityFramework.Testing.FakeItEasy [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.FakeItEasy.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.FakeItEasy/) 
+### EntityFrameworkCore.Testing.FakeItEasy [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.FakeItEasy.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.FakeItEasy/) 
 
-**EntityFramework.Testing.FakeItEasy** provides a helpful extension method to mock EntityFramework's DbSets using [FakeItEasy](http://fakeiteasy.github.io/). 
+**EntityFrameworkCore.Testing.FakeItEasy** provides a helpful extension method to mock EntityFramework's DbSets using [FakeItEasy](http://fakeiteasy.github.io/). 
 
-You can write a unit test against a mock context as follows. `SetupData` extension method is part of EntityFramework.Testing.FakeItEasy.
+You can write a unit test against a mock context as follows. `SetupData` extension method is part of EntityFrameworkCore.Testing.FakeItEasy.
 
 ```C#
 [TestMethod]
@@ -227,9 +227,9 @@ public async Task Index_returns_blogs_ordered_by_name()
 }
 ```
 
-### EntityFramework.Testing.FakeItEasy.Ninject [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.FakeItEasy.Ninject.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.FakeItEasy.Ninject/) 
+### EntityFrameworkCore.Testing.FakeItEasy.Ninject [![NuGet Version](http://img.shields.io/nuget/v/EntityFrameworkTesting.FakeItEasy.Ninject.svg?style=flat)](https://www.nuget.org/packages/EntityFrameworkTesting.FakeItEasy.Ninject/) 
 
-**EntityFramework.Testing.FakeItEasy.Ninject** provides a Ninject Module to auto mock `DbContext` and its `DbSet<>` properties using Ninject.MockingKernel.FakeItEasy.
+**EntityFrameworkCore.Testing.FakeItEasy.Ninject** provides a Ninject Module to auto mock `DbContext` and its `DbSet<>` properties using Ninject.MockingKernel.FakeItEasy.
 
 ```C#
 [TestMethod]
